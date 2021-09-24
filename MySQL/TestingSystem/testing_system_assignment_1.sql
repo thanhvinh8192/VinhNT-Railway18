@@ -13,7 +13,7 @@ PRIMARY KEY (department_id)
 /*Create Position Table*/
 CREATE TABLE `position`(
 	position_id 			TINYINT UNSIGNED AUTO_INCREMENT ,
-	position_name 			ENUM('Dev', 'Test', 'Scrum Master', 'PM'),
+	position_name 			ENUM ('Dev1', 'Dev2', 'PM', 'Leader', 'Scrum Master', 'Tester'),
 PRIMARY KEY (position_id)
 );
 
@@ -76,7 +76,7 @@ PRIMARY KEY (type_id)
 /*Create Category_Question Table*/
 CREATE TABLE `category_question`(
 	category_id			TINYINT UNSIGNED AUTO_INCREMENT,
-	category_name		ENUM('Java', '.NET', 'SQL', 'Postman', 'Ruby','HTML', 'CSS', 'Javascript') NOT NULL,
+	category_name		ENUM ('Java', 'SQL', '.NET', 'Ruby', 'Python', 'NodeJS', 'HTML', 'CSS', 'JavaScript') NOT NULL,
 PRIMARY KEY (category_id)
 );
 
