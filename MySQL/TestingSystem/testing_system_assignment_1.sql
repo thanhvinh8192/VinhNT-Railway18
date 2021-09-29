@@ -140,7 +140,6 @@ CONSTRAINT `fk_exam_account`
 CREATE TABLE `exam_question`(
 	exam_id				TINYINT UNSIGNED,
 	question_id			TINYINT UNSIGNED,
-CONSTRAINT `unique_exam_question` UNIQUE KEY (exam_id, question_id),
 CONSTRAINT `fk_exam_question_exam`
 	FOREIGN KEY (exam_id) REFERENCES `exam`(exam_id)
 	ON DELETE SET NULL

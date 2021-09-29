@@ -130,7 +130,9 @@ INSERT INTO `exam`	(`code`, 	title, 		category_id, duration, creator_id, create_
 					('MS_06', 'De thi 06', 2, 90, 2, CURDATE()),
 					('MS_07', 'De thi 07', 1, 60, 1, CURDATE())
 ;
+
 -- Insert data to Exam_Question Table --
+
 INSERT INTO `exam_question` (exam_id, question_id)
 	VALUES 					(1, 1),
 							(2, 1),
@@ -149,3 +151,5 @@ INSERT INTO `exam_question` (exam_id, question_id)
 							(4, 5),
 							(6, 5)
 ;
+
+

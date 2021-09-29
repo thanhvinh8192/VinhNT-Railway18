@@ -1,4 +1,5 @@
-
+USE testing_system_assignment;
+			 
 -- Question 2: Lấy ra tất cả phòng ban
 SELECT *
 FROM department;
@@ -52,27 +53,35 @@ WHERE (SUBSTRING_INDEX(fullname, ' ', -1)) LIKE 'D%o';
 
 
 -- Question 12: Xóa tất cả các exam được tạo trước ngày 20/12/2019
+COMMIT;
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM exam
 WHERE create_date < '20191220';
 SET SQL_SAFE_UPDATES = 1; 
+ROLLBACK;
 
 -- Question 13: Xóa tất cả các question có nội dung bắt đầu bằng từ "câu hỏi"
+COMMIT;
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM question
 WHERE BINARY content LIKE 'câu hỏi%';
 SET SQL_SAFE_UPDATES = 1; 
+ROLLBACK;
 
 -- Question 14: Update thông tin của account có id = 5 thành tên "Nguyễn Bá Lộc" và email thành loc.nguyenba@vti.com.vn
+COMMIT;
 SET SQL_SAFE_UPDATES = 0;
 UPDATE `account`
 	SET fullname = 'Nguyễn Bá Lộc', email = 'loc.nguyenba@vti.com.vn' 
 WHERE account_id = 5;
 SET SQL_SAFE_UPDATES = 1;
+ROLLBACK;
 
 -- Question 15: update account có id = 5 sẽ thuộc group có id = 4
+COMMIT;
 SET SQL_SAFE_UPDATES = 0;
 UPDATE group_account
 SET group_id = 4
 WHERE account_id = 5;
 SET SQL_SAFE_UPDATES = 1;
+ROLLBACK;
