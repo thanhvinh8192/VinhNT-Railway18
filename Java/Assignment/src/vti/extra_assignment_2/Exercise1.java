@@ -1,4 +1,4 @@
-package com.testing_sysstem_assignment_2;
+package com.extra_assignment_2;
 
 
 import java.util.Scanner;
@@ -78,11 +78,39 @@ public class Exercise1 {
         System.out.println((resultSbtraction > 0) ? (firstNumber + ">" + secondNumber) : (firstNumber + "<" + secondNumber));
     }
 
+    /*Question 5:
+        Nhập vào 2 số tự nhiên a và b. Kiểm tra xem a có chia hết cho b không
+    * */
+    public boolean checkDivisible(int a, int b){
+        return a % b == 0;
+    }
+    public void divisibleNumber(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int a = scanner.nextInt();
+        System.out.print("Enter the second number: ");
+        int b = scanner.nextInt();
+        if (checkDivisible(a, b)){
+            System.out.println(a + " divisible by " + b);
+        }
+        else{ System.out.println(a + " not divisible by " + b);}
+
+    }
+
     public static void main(String[] args) {
         Exercise1 exercise = new Exercise1();
         //exercise.changeCm(986.2);
         //exercise.changeSecondsToTime(46822);
         //System.out.println(findMaxValueArray(exercise.createArray()));
-        exercise.checkSubtraction();
+        //exercise.checkSubtraction();
+        exercise.divisibleNumber();
+
+        //Question 6
+        Student student = new Student();
+        student.setMathMark(10.0);
+        student.setPhysicalMark(9.0);
+        student.setChemistryMark(8.5);
+        System.out.println("GPA of student:" + student.getGpaStudent());
+        System.out.println("Grade of student: " + student.getGradeStudent(student.getGpaStudent()));
     }
 }
