@@ -1,9 +1,11 @@
-package com.extra_assignment_2;
+package vti.extra_assignment_2;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercise1 {
+
 
     /*Question 1:
         Viết chương trình nhập vào một số thực. Đơn vị tính cho số này là centimet
@@ -98,6 +100,12 @@ public class Exercise1 {
     }
 
     public static void main(String[] args) {
+        int arr[] = new int[]{1, 2, 4, 1, 3, 5, 7, 6};
+        Arrays.sort(arr);
+        for (int a: arr) {
+            System.out.println();
+        }
+
         Exercise1 exercise = new Exercise1();
         //exercise.changeCm(986.2);
         //exercise.changeSecondsToTime(46822);

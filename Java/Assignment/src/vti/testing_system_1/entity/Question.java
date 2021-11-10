@@ -1,4 +1,4 @@
-package com.testing_system_1.entity;
+package vti.testing_system_1.entity;
 
 import java.util.Date;
 

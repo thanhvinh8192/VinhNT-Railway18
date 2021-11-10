@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jdk-17">
+    <CLASSES>
+      <root url="file:///Library/Java/JavaVirtualMachines/jdk-17.jdk" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

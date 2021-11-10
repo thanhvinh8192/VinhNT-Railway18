@@ -1,4 +1,4 @@
-package com.extra_assignment_2;
+package vti.extra_assignment_2;
 
 public class Student {
     private double mathMark;

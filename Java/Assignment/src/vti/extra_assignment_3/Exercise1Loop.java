@@ -1,4 +1,4 @@
-package com.extra_assignment_3;
+package vti.extra_assignment_3;
 
 import org.jetbrains.annotations.NotNull;
 

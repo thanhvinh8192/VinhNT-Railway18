@@ -1,4 +1,4 @@
-package com.testing_system_1.assignment4;
+package vti.testing_system_1.assignment4;
 
 public class Student {
     private int studentId;

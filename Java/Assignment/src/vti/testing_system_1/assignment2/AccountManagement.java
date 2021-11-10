@@ -1,7 +1,6 @@
-package com.testing_system_1.assignment2;
+package vti.testing_system_1.assignment2;
 
-import com.testing_system_1.entity.Account;
-import com.testing_system_1.entity.Position;
+import vti.testing_system_1.entity.Account;
 
 public class AccountManagement {
     //Account account;

@@ -1,9 +1,9 @@
-package com.testing_system_1.assignment2;
+package vti.testing_system_1.assignment2;
 
-import com.testing_system_1.entity.Account;
-import com.testing_system_1.entity.Department;
-import com.testing_system_1.entity.Group;
-import com.testing_system_1.entity.Position;
+import vti.testing_system_1.entity.Account;
+import vti.testing_system_1.entity.Department;
+import vti.testing_system_1.entity.Group;
+import vti.testing_system_1.entity.Position;
 
 import java.util.*;
 
