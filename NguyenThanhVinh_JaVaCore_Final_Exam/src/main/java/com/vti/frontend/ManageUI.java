@@ -1,80 +1,101 @@
 package com.vti.frontend;
 
-import java.util.List;
 
-import com.vti.backend.presentationlayer.UserController;
-import com.vti.entity.Manager;
-import com.vti.entity.User;
+import com.vti.backend.presentationlayer.CandidateController;
+import com.vti.entity.Fresher;
+import com.vti.entity.GraduationRank;
+import com.vti.entity.Candidate;
+import com.vti.entity.Experience;
 import com.vti.utils.ScannerUtils;
 
 public class ManageUI {
 	private String menuStr = """
-			1. In thông tin Employee và Manager theo id project.
-			2. Lấy ra tất cả thông tin của các Manager trong các project.
-			3. Login
-			4. Kết thúc chương trình
+			1. Register
+			2. Login
+			3. Kết thúc chương trình
 			----------------------------------------------""";
 	
-	public UserController userController;
+	public CandidateController candidateController;
 	
 	public ManageUI() {
-		userController = new UserController();
+		candidateController = new CandidateController();
 	}
 	
-	//Chức năng 1 (Câu 2)
-	public void printMemberByProjectId() {
-		System.out.print("Mời bạn nhập id project:");
-		int projectId = ScannerUtils.inputPositive("Vui lòng nhập số lớn hơn 0");
-		List<User> listUsers = userController.getListUserByProjectId(projectId);
-		System.out.println("Display User Info");
-		System.out.println("___________________________________________________________________________");
-		System.out.printf("%-5s%-20s%-25s%-15s%-15s", "ID", "FullName", "Email", "Password", "Role");
-		System.out.println("\n___________________________________________________________________________");
-		for (User user : listUsers) {
-			System.out.printf("%-5d%-20s%-25s%-15s%-15s\n", user.getId(), user.getFullname(), user.getEmail(),
-					user.getPassword(), user.getRole());
+	//Chức năng 1
+	public void registerCandidate() {
+		System.out.print("Mời nhập First Name: ");
+		String firstName = ScannerUtils.inputString("Tên không đúng định dạng.");
+		System.out.print("Mời nhập Last Name: ");
+		String lastName = ScannerUtils.inputString("Tên không đúng định dạng.");
+		System.out.print("Mời nhập Phone: ");
+		String phone = ScannerUtils.inputPhoneNumber("Phone không đúng dịnh dạng.");
+		System.out.print("Mời nhập email: ");
+		String email = ScannerUtils.inputEmail("Email không đúng định dạng. ");
+		System.out.print("Mời nhập password: ");
+		String password = ScannerUtils.inputPassword("Error.");
+		System.out.print("Mời chọn Role cho ứng viên: 1. Experience || 2. Fresher");
+		int role = ScannerUtils.inputRole("Bạn chỉ được nhập số.");
+		if (role == 1) {
+			System.out.print("Mời nhập số năm kinh nghiệm cho ứng viên: ");
+			int expInYear = ScannerUtils.inputExpInYear("Bạn chỉ được nhập số.");
+			Experience experience = new Experience( firstName, lastName, phone, email, password, expInYear, null);
+			System.out.println(candidateController.createExperience(experience));
+			
+		}else {
+			Fresher fresher = new Fresher(firstName, lastName, phone, email, password, null);
+			System.out.println("Mời chọn xếp loại ứng viên: ");
+			System.out.println("""
+								1. Excellence
+								2. Good
+								3. Fair
+								4. Poor
+								""");
+			int rank = ScannerUtils.inputGraduationRank("Nhập sai.");
+			switch (rank) {
+			case 1:
+				fresher.setGraduationRank(GraduationRank.Excellence);
+				break;
+			case 2:
+				fresher.setGraduationRank(GraduationRank.Good);
+				break;
+			case 3:
+				fresher.setGraduationRank(GraduationRank.Fair);
+				break;
+			case 4:
+				fresher.setGraduationRank(GraduationRank.Poor);
+				break;
+			}
+			System.out.println(candidateController.createFresher(fresher));
 		}
 	}
 	
-	//Chức năng 2 (Câu 3)
-	public void getManagerInfo() {
-		List<Manager> managers = userController.getListManager();
-		System.out.println("Display Manager Info");
-		System.out.println("___________________________________________________________________________");
-		System.out.printf("%-10s%-10s%-20s%-25s%-15s", "ProjectID", "ManagerID", "FullName", "Email", "ExpInYear");
-		System.out.println("\n___________________________________________________________________________");
-		for (Manager manager : managers) {
-			System.out.printf("%-10d%-10s%-20s%-25s%-15s\n",manager.getProject(), manager.getId(), 
-					manager.getFullname(), manager.getEmail(), manager.getExpInYear());
-		}
-	}
-	
-	//Chức năng 3 login
+	//Chức năng 2
 	public void login() {
 			System.out.print("Mời nhập email: ");
 			String email = ScannerUtils.inputEmail("Email không đúng định dạng. ");
 			System.out.print("Mời nhập password: ");
 			String password = ScannerUtils.inputPassword("Error.");
-			User user = userController.login(email, password);
-			if (user == null) {
+			Candidate candidate = candidateController.login(email, password);
+			if (candidate == null) {
 				System.err.println();
 			}else {
-				System.out.println("Đăng nhập thành công, thông tin user vừa đăng nhập: ");
-				System.out.println(user);
-				System.out.println("----------------------------------------------------");
+				System.out.println("Đăng nhập thành công");
+				System.out.println("Xin chào " + candidate.getFirstName() + " " + candidate.getLastName());
+				System.out.println("______________________________");
+				
 			}
-			
 			
 	}
 	
 	//Chọn chức năng
 	public int inputFunction() {
 		while(true) {
-			int x = ScannerUtils.inputInt("Bạn chỉ nhập được chức năng từ 1->4. Mời bạn nhập lại");
-			if (x >= 1 && x <= 4) {
+			int x = ScannerUtils.inputInt("Bạn chỉ được nhập số.");
+			if (x >= 1 && x <= 3) {
 				return x;
 			}else {
-				System.err.println("Bạn chỉ nhập được chức năng từ 1->4. Mời bạn nhập lại");
+				System.err.println("Bạn chỉ nhập được chức năng từ 1->4.");
+				System.out.print("Mời bạn nhập lại: ");
 			}
 		}
 	}
@@ -87,14 +108,10 @@ public class ManageUI {
 			int inputChoosen = inputFunction();
 			switch(inputChoosen) {
 				case 1:
-					System.out.println("Danh sách nhân viên trong project");
-					printMemberByProjectId();
+					System.out.println("Register");
+					registerCandidate();
 					break;
 				case 2:
-					System.out.println("Danh sách Manager của các Project");
-					getManagerInfo();
-					break;
-				case 3:
 					System.out.println("Login");
 					login();
 					break;

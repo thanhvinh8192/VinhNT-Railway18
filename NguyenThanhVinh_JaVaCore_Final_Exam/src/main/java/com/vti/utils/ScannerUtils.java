@@ -13,6 +13,7 @@ public class ScannerUtils {
 				return numberInt;
 			} catch (NumberFormatException e) {
 				System.err.println(errorMessage);
+				System.out.print("Mời bạn nhập lại: ");
 			}
 		}
 	}
@@ -23,7 +24,31 @@ public class ScannerUtils {
 			if (positiveNumber > 0) {
 				return positiveNumber;
 			}else {
-				System.err.println(errorMessage);
+				System.err.println("Vui lòng nhập số lớn hơn 0");
+				System.out.print("Mời bạn nhập lại: ");
+			}
+		}
+	}
+	
+	public static int inputExpInYear(String errorMessage) {
+		while (true) {
+			int positiveNumber = inputInt(errorMessage);
+			if (positiveNumber > 0 && positiveNumber < 11) {
+				return positiveNumber;
+			}else {
+				System.err.println("Bạn chỉ được nhập từ 1 -> 10");
+				System.out.print("Mời bạn nhập lại: ");
+			}
+		}
+	}
+	
+	public static int inputGraduationRank(String errorMessage) {
+		while (true) {
+			int positiveNumber = inputInt(errorMessage);
+			if (positiveNumber > 0 && positiveNumber < 5) {
+				return positiveNumber;
+			}else {
+				System.err.println("Bạn chỉ được nhập từ 1 -> 4");
 				System.out.print("Mời bạn nhập lại: ");
 			}
 		}
@@ -33,10 +58,42 @@ public class ScannerUtils {
 		while (true) {
 			int role = inputInt(errorMessage);
 			if (role < 1 || role > 2) {
-				System.err.println(errorMessage);
+				System.err.println("Vui lòng nhập 1 hoặc 2");
+				System.out.print("Mời bạn nhập lại: ");
 			}else {
 				return role;
 			}
+		}
+	}
+	
+	public static String inputPhoneNumber(String errorMessage) {
+		while (true) {
+			String number = scanner.nextLine();
+			if (number.length() > 12 || number.length() < 9) {
+				System.err.println(errorMessage);
+				continue;
+			}
+
+			if (number.charAt(0) != '0') {
+				System.err.println(errorMessage);
+				continue;
+			}
+
+			boolean isNumber = true;
+
+			for (int i = 0; i < number.length(); i++) {
+				if (Character.isDigit(number.charAt(i)) == false) {
+					isNumber = false;
+					break;
+				}
+			}
+			if (isNumber == true) {
+				return number;
+			} else {
+				System.out.println(errorMessage);
+				System.out.print("Mời bạn nhập lại phone number: ");
+			}
+
 		}
 	}
 	
@@ -57,7 +114,7 @@ public class ScannerUtils {
 			String password = scanner.nextLine();
 			
 			if (password.length() < 6 || password.length() > 12) {
-				System.err.println(errorMessage + " Password chỉ được 6 -> 12 ký tự");
+				System.err.println(errorMessage + " Password phải dài 6 -> 12 ký tự");
 				System.out.print("Mời bạn nhập lại password: ");
 				continue;
 			}
@@ -80,43 +137,20 @@ public class ScannerUtils {
 		}
 	}
 	
-	public static String inputFullname(String errorMessage) {
-		while (true) {
-			String fullName = inputName();
-			String tempName = fullName.replaceAll("\\s+", "");
-			
-			boolean nameInvalid = false;
-			
-			for (int i = 0; i < tempName.length(); i++) {
-				if (tempName.charAt(i) < 'A' || tempName.charAt(i) > 'z') {
-					nameInvalid = true;
-					break;
-				}
-			}
-			
-			if (nameInvalid == false) {
-				return fullName;
-			}else {
-				System.err.println("Tên chưa đúng định dạng, mời bạn nhập lại");
-			}
-		}
-	}
 	
-	private static String inputName() {
-		String name = scanner.nextLine();
-		name = name.trim();
-		name = name.replaceAll("\\s+", " ");
-		name = name.toLowerCase();
-		
-		name = "";
-		
-		String[] words = name.split(" ");
+	public static String inputString(String errorMessage) {
+		String input = scanner.nextLine();
+		input = input.trim(); 						// Loại khoảng trắng 2 đầu
+		input = input.replaceAll("\\s+", " "); 		// Loại khoảng trắng trong từ
+		input = input.toLowerCase();
+		String[] words = input.split(" ");
+		String nameString = "";
 		for (String word : words) {
 			word = word.substring(0, 1).toUpperCase() + word.substring(1, word.length());
-			name = name + word + " ";
+			nameString = nameString + word + " ";
 		}
-		name = name.trim();
-		return name;
+		nameString = nameString.trim();
+		return nameString;
 	}
 }
  
