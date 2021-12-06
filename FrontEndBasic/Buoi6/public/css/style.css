@@ -1,0 +1,47 @@
+.container-lg{
+    /*border: 1px solid lightsalmon;*/
+}
+.table-wrapper{
+    margin-top: 30px;
+}
+.table-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.row > div {
+    /*border: 1px solid lightsalmon;
+    height: 50px;*/
+}
+.fa-plus{
+    margin-right: 5px;
+}
+button.btn{
+    float: right;
+}
+
+.add{
+    color: #27b46b;
+    cursor: pointer;
+}
+.edit{
+    color: lightsalmon;
+}
+.delete{
+    color: red;
+}
+.table thead th:last-child{
+    width: 100px;
+}
+table td .material-icons{
+    font-size: 18px;
+    cursor: pointer;
+}
+table td .add .material-icons{
+    font-size: 24px;
+}
+table td .add{
+    display: none;
+}
+table td a {
+    margin: 0px 5px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/CSS/style.css"/>
+    <link rel="stylesheet" href="public/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" type="image/x-icon" href="public/image/avatar.jpeg">
+    <title>Buổi 1 Date20211121AM </title>
+
+
+</head>
+<body>
+    <div class ="container">
+        <h2>Chat Message</h2>
+        <div class="message-item">
+            <img src="public/image/avatar-men.jpeg">
+            <div>
+                <p>こんにちは！今日はどうですか</p>
+                <span class="time-right">15:30</span>
+            </div>
+            
+        </div>
+        <div class="message-item darker">
+            <img src="public/image/avatar-women.jpeg">
+            <p>大丈夫です</p>
+            <span class="time-left">15:35</span>
+        </div>
+        <div class="message-item">
+            <img src="public/image/avatar-men.jpeg">
+            <p>お大事に</p>
+            <span class="time-right">15:40</span>
+        </div>
+        <div class="message-item darker">
+            <img src="public/image/avatar-women.jpeg">
+            <p>有難うございます</p>
+            <span class="time-left">15:45</span>
+        </div>
+        <div class="menu-icon" id="menu">
+            <a class="active" href="#" onclick="handleClick(event)"><i class="fa fa-home"></i></a>
+            <a href="#" onclick="handleClick(event)"><i class="fa fa-search"></i></a>
+            <a href="#" onclick="handleClick(event)"><i class="fa fa-envelope"></i></a>
+            <a href="#" onclick="handleClick(event)"><i class="fa fa-globe"></i></a>
+            <a href="#" onclick="handleClick(event)"><i class="fa fa-trash"></i></a>
+        </div>
+
+        <script type="text/javascript">
+            var listIcon = document.getElementById('menu').getElementsByTagName('a');
+            console.log(listIcon);
+            function handleClick (e){
+                e.preventDefault();
+                for (let i  = 0; i < listIcon.length; i ++ ){
+                    listIcon[i].classList.remove('active');
+                }
+                e.target.classList.add('active');
+                e.target.parentElement.classList.add('active');
+            }
+            
+        </script>
+    </div>
+   
+    <!-- Xem the span-->
+</body>
+</html>

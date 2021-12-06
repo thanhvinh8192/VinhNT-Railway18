@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="/public/css/style.css"/>
+    <link rel="shortcut icon" href="/public/imgs/mew.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/public/libs/bootstrap-4.6.1-dist/css/bootstrap.min.css"/>
+    <!-- google material-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <!-- js link -->
+    <script src="/public/libs/jquery.slim.min.js"></script>
+    <script src="/public/libs/popper.min.js"></script>
+    <script src="/public/libs/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+
+    <script src="/main.js"></script>
+    <title>Buoi 6</title>
+</head>
+<body>
+    <div class="container-lg">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h3>Employees</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <button class="btn btn-info add-new">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Add new</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead class="table ">
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Administration</td>
+                        <td>070-2635-3649</td>
+                        <td>
+                            <a class="add"><i class="material-icons">&#xe03b;</i></a>
+                            <a class="edit"><i class="material-icons">&#xe3c9;</i></a>
+                            <a class="delete"><i class="material-icons">&#xe872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>Customer Service</td>
+                        <td>070-2635-3649</td>
+                        <td>
+                            <a class="add"><i class="material-icons">&#xe03b;</i></a>
+                            <a class="edit"><i class="material-icons">&#xe3c9;</i></a>
+                            <a class="delete"><i class="material-icons">&#xe872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fran Wilson</td>
+                        <td>Human Resource</td>
+                        <td>070-2635-3649</td>
+                        <td>
+                            <a class="add"><i class="material-icons">&#xe03b;</i></a>
+                            <a class="edit"><i class="material-icons">&#xe3c9;</i></a>
+                            <a class="delete"><i class="material-icons">&#xe872;</i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn btn-outline-danger" onclick="document.getElementById('demo').innerHTML = Date()">Click Me</button>
+        <p id="demo"></p>
+    </div>
+</body>
+</html>

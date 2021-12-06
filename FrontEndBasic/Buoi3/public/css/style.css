@@ -1,0 +1,80 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icon-menu{
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.icon-menu.fa{
+  display: none;
+  cursor: pointer;
+}
+.top-nav{
+  background-color: #1e1e1e;
+  position: relative;
+  overflow: auto;
+}
+.top-nav a{  /* dùng dấu > truoc the a khi muon lay the con truc tiep cua lop cha*/
+  color: white;
+  text-decoration: none;
+  padding: 16px 25px;
+  display: block;
+  float: left;
+  
+}
+.top-nav a:hover{
+  background-color: #bbb;
+  color: black;
+}
+.active{
+  background-color: #04AA6D;
+}
+.top-nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .icon-menu{
+      color: white;
+      position: absolute;
+      right: 10px;
+      top: 12px;
+    }
+    .icon-menu.fa{
+      display: block;
+    }
+    .top-nav a:not(:first-child){
+      display: none;
+    }
+
+    .top-nav.responsive a{
+      display: block ;
+      float: none;
+    }
+  }
+
+
+  /*
+  cac the a, img, p
+  position relative //tương đối -> dùng khi di chuyển nhưng không muốn thay đổi cấu trúc phần tử
+    + không gây ảnh hưởng đến các thành phần xung quanh khác; 
+    +di chuyển theo thuộc tính ban đầu nếu class cha không có position
+  position absolute
+    + so với lớp cha gần nhất có 1 trong 3 thuộc tính: relative, fixed, absolute
+    + nếu không tìm thấy sẽ canh theo scroll page
+  */

@@ -1,0 +1,86 @@
+.container{
+    width: 800px;
+    border: 1px solid lightsalmon;
+    padding: 5px; /* giãn cách phía trong*/
+    margin: auto; /* giãn cách phía ngoài*/
+    border-radius: 5px;
+}
+
+/* Ưu tiên trong CSS
+.message-item.darker{
+    background-color: lightslategrey;
+}
+*/
+.message-item{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 5px;
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.message-item img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 20px;
+    
+}
+
+.message-item span{
+    color: lightslategrey;
+    display: block;
+    text-align: right;
+    margin-right: 5px;
+}
+.message-item div{
+    flex: 1;
+}
+.time-right{
+    display: block;
+    margin-top: 5px;
+    color: #aaa;
+}
+
+.darker{
+    background-color: DEDDDE;
+}
+.darker img{
+    float: right;
+}
+.darker span{
+    text-align: left;
+    margin-left: 5px;
+}
+.message-item.darker .time-left{
+    float: left;
+    color: #999;
+}
+.menu-icon{
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    background-color: #555555;
+}
+.menu-icon .fa{
+  
+}
+.menu-icon a{
+    border-radius: 5px;
+    padding: 16px;
+    font-size: 30px;
+    color: white;
+    
+}
+.menu-icon a:hover{
+    background-color: black !important;
+}
+.active{
+    background-color: #4CA774;
+}

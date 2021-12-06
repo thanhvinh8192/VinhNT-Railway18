@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css"/>
+    <link rel="stylesheet" href="/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+   <header>
+        <div id="top_nav" class="top-nav">
+            <a class="active" href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <i  onclick="handleClick()" class="icon-menu fa fa-bars"></i>
+
+            
+        </div>
+   </header>
+   <main>
+
+   </main>
+
+   <footer>
+   </footer>
+
+   <script type="text/javascript">
+   function handleClick(){
+       let menu = document.getElementById('top_nav')
+       if (menu.className == 'top-nav'){
+           menu.className += ' responsive'
+       }else{
+           menu.className = 'top-nav'
+       }
+   }
+   </script>
+</body>
+</html>

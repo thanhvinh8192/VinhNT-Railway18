@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="666d84db-c55c-4608-8662-fdf917cb5b80" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/JavaFinalExam.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/backend/businesslayer/CandidateServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/backend/datalayer/CandidateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/backend/presentationlayer/CandidateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/entity/Candidate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/entity/Experience.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/entity/Fresher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/entity/GraduationRank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/frontend/ManageUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/frontend/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/utils/JdbcUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/java/com/vti/utils/ScannerUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/src/main/resources/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/META-INF/maven/com.vti/NguyenThanhVinhJavaCoreFinalExam/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/META-INF/maven/com.vti/NguyenThanhVinhJavaCoreFinalExam/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/com/vti/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/com/vti/frontend/ManageUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/com/vti/frontend/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/com/vti/utils/JdbcUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/com/vti/utils/ScannerUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NguyenThanhVinh_JaVaCore_Final_Exam/target/classes/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/Utils/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/Utils/IOStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/Utils/JdbcUltils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/Utils/ScannerUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/backend/bussinesslayer/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/backend/bussinesslayer/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/backend/datalayer/IUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/backend/datalayer/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/backend/presentation/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/entity/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/frontend/Function.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/java/com/vti/frontend/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/resource/UserManager.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/resource/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/main/resource/message.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateFinalExam/src/test/java/com/vti/Testing/AppTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="21gPRzwClwJwLKT9d2jnafDfnFi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="666d84db-c55c-4608-8662-fdf917cb5b80" name="Changes" comment="" />
+      <created>1638359753433</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638359753433</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -13,7 +13,7 @@ PRIMARY KEY (department_id)
 /*Create Position Table*/
 CREATE TABLE `position`(
 	position_id 			TINYINT UNSIGNED AUTO_INCREMENT ,
-	position_name 			ENUM ('Dev1', 'Dev2', 'PM', 'Leader', 'Scrum Master', 'Tester'),
+	position_name 			ENUM ('Dev1', 'Dev2', 'PM', 'Leader', 'Scrum_Master', 'Tester'),
 PRIMARY KEY (position_id)
 );
 
@@ -69,7 +69,7 @@ CONSTRAINT `fk_group_account_members`
 /*Create Type_Question Table*/
 CREATE TABLE `type_question`(
 	type_id				TINYINT UNSIGNED AUTO_INCREMENT,
-	type_name			ENUM ('Essay', 'Multiple-Choice') NOT NULL,
+	type_name			ENUM ('Essay', 'Multiple_Choice') NOT NULL,
 PRIMARY KEY (type_id)
 );
 

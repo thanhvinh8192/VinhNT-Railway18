@@ -1,0 +1,60 @@
+.container-lg {
+    /* border: solid 1px gray; */
+}
+
+/* .container-fluid .row > div {
+    border: 1px solid lightgray;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+} */
+
+.table-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.row > div {
+    /* border: 1px solid gray; */
+    /* height: 45px; */
+}
+
+button.btn {
+    float: right;
+}
+
+.fa.fa-plus {
+    margin-right: 5px;
+}
+
+.add {
+    color: #27b46b;
+}
+
+.edit {
+    color: orange;
+}
+
+.delete {
+    color: red;
+}
+
+.table thead th:last-child {
+    width: 100px;
+}
+
+.table td .material-icons {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.table td .add .material-icons {
+    font-size: 24px;
+}
+
+.table td .add {
+    display: none;
+}
+
+.table td a {
+    margin: 0 5px;
+}

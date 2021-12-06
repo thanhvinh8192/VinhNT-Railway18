@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Buoi5/public/css/style.css"/>
+
+    <script src="/Buoi5/public/libs/jquery.slim.min.js"></script>
+    <title>Jquery</title>
+</head>
+<body>
+    <h1 id="h1_id">Demo Using Jquery</h1>
+    <div class="parent">
+        <div class="div" id="div1_id">Div1</div>
+        <div class="div">Div2</div>
+    </div>
+    <button style="margin-top: 5px; padding: 3px 10px; cursor: pointer;">Click</button>
+
+    <script type="text/javascript">
+        /*let divs = document.getElementsByTagName('div')
+        console.log(divs)
+        let divs2 = $('div')*/
+        //console.log(divs2)
+
+        let div1 = document.getElementById('div1_id')
+        let parentDiv = div1.parentElement
+        console.log(parentDiv)
+        
+        /*
+        console.log(h1)
+        let h2 = $('#h1_id')
+        console.log(h2)
+
+        let div1 = $('.div1')
+        console.log(div1)
+        */
+    </script>
+</body>
+</html>
