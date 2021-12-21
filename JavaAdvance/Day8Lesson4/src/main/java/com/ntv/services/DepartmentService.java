@@ -21,8 +21,9 @@ public class DepartmentService {
         departmentRepository.deleteDepartmentById( id);
     }
 
-    public void createDepartment(Department department){
-        departmentRepository.createDepartment(department);
+    public int createDepartment(Department department){
+        return departmentRepository.createDepartment(department);
+
     }
 
     public void updateDepartment(Department department) {

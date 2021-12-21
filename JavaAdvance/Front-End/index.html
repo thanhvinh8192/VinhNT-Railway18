@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoAPI</title>
+    <script src="/public/libs/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1 id="h1">TEXT</h1>
+    <div class="container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>code</th>
+                    <th>title</th>
+                    <th>type</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script>
+        $.ajax({
+            url: 'http://localhost:8080/api/list-articles',
+            method: 'GET',
+            success: function(response){
+                let articles = response
+                articles.forEach((element,index) => {
+                    let row = '<tr>' +
+                        '<td>' + (index + 1) + '</td>'+
+                        '<td>' + element.code + '</td>'+
+                        '<td>' + element.title + '</td>'+
+                        '<td>' + element.type + '</td>'
+                        $('#table tbody').append(row)
+                });
+            },
+            error: function(error){
+                console.log(error)
+            }
+        })
+    </script>
+    
+</body>
+</html>

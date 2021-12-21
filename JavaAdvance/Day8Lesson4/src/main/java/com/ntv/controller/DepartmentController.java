@@ -29,14 +29,14 @@ public class DepartmentController {
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public void  createDepartment(@RequestParam("departmentName") String departmentName, @RequestParam("created_at") String createdAt){
+    public int  createDepartment(@RequestParam("departmentName") String departmentName, @RequestParam("created_at") String createdAt){
         LocalDate createdDate = LocalDate.parse(createdAt);
 
         Department department = new Department();
         department.setDepartmentName(Department.DepartmentNameEnum.toEnum2(departmentName));
         department.setCreatedAt(createdDate);
 
-        departmentService.createDepartment(department);
+        return departmentService.createDepartment(department);
     }
 
     @RequestMapping(value =  "/update", method = RequestMethod.POST)

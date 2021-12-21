@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', san-serif;
+    background-color: #1f2739;
+    color: #a7a1ae;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid lightgray; */
+    padding: 30px 30px 100px 30px;
+    min-width: 600px;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4dc3fa;
+    margin-bottom: 2em;
+}
+
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    text-align: left;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, .15); */
+}
+
+table th {
+    background-color: #1f2739;
+    color: #185875
+}
+
+
+table tbody tr:nth-child(even) {
+    background-color: #2c3446;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #323c50;
+}
+
+table td {
+    font-size: 1.2em;
+    box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+table thead th:first-child {
+    width: 100px;
+}
+
+table thead th:last-child {
+    width: 160px;
+}
+
+.container td, .container th {
+    /* padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left:2%; */
+    padding: 12px;  
+}
+
+table tbody tr:hover {
+    background-color: #696F7B;
+}
+
+tr td a {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+tr td a:first-child {
+    color: green;
+}
+
+tr td a:nth-child(2) {
+    color: #4dc3fa;
+}
+
+.save {
+    display: none;
+}
+
+tr td a:nth-child(3) {
+    color: #E85D04;
+}
+
+tr td a:last-child {
+    color: #8C0B3C;
+}
+
+tr td a:hover {
+    color: #4dc3fa;
+}
+
+.form-control {
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    background: transparent;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-weight: bold;
+    color: white;
+    border-color: #4dc3fa;
+}
+
+.form-control:focus {
+    /* color: #495057; */
+    outline: 0;
+}
+
+.form-control.error {
+    border-color: #f50000;
+}

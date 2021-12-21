@@ -16,13 +16,14 @@ public class DepartmentRepository {
         hibernateUtils = HibernateUtils.getInstance();
     }
 
-    public void createDepartment(Department department){
+    public int createDepartment(Department department){
         Session session = null;
         try{
             session = hibernateUtils.openSession();
             session.getTransaction().begin();
-            session.save(department);
+            int idInsert = (int) session.save(department);
             session.getTransaction().commit();
+            return idInsert;
         }
         finally {
             if (session!= null){
