@@ -1,0 +1,50 @@
+
+.btn-actions {
+    border: none;
+    background: transparent;
+}
+.btn-actions:focus {
+    outline: none;
+}
+.btn-actions:hover {
+    color: grey;
+}
+.edit {
+    color: salmon;
+}
+
+#datatables-accounts_filter, #datatables-accounts_length {
+    display: none;
+}
+.row-header {
+    display: flex;
+    margin-top: 5px;
+}
+
+.department-options {
+    margin-left: 20px;
+}
+
+.row-header > div:first-child {
+    width: 270px;
+}
+
+.header-options {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.header-options .form-group {
+    margin-bottom: 3px;
+}
+.search-input {
+    display: flex;
+}
+.search-input input {
+    border: none;
+    outline: none;
+    width: 90%;
+}
+#icon_search {
+    font-size: 20px;
+    cursor: pointer;
+}
